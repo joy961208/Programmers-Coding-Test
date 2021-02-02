@@ -1,28 +1,31 @@
+import math
 def solution(distance, rocks, n):
     answer = 0
+    #바위를 거리로 분류하는 과정
     rocks.append(distance)
     rocks.sort()
     r = [rocks[0]]
     for i,j in enumerate(rocks[1:]):
         r.append(j - rocks[i])
-    for i in range(n):
-        ind = r.index(min(r))
-        if ind == 0:
-            a = r[0] + r[1]
-            del r[0:2]
-            r.insert(0,a)
-        elif ind == len(r)-1:
-            a = r[-2] + r[-1]
-            del r[-2:]
-            r.append(a)
-        else :
-            if r[ind+1] >= r[ind-1]:
-                a = r[ind-1] + r[ind]
-                del r[ind-1:ind+1]
-                r.insert(ind-1,a)
-            else:
-                a = r[ind + 1] + r[ind]
-                del r[ind:ind + 2]
-                r.insert(ind , a)
 
-    return min(r)
+    maxlen = distance
+    minlen = 1
+
+    while maxlen >= minlen:
+        rock = r.copy()
+        midlen = (maxlen+minlen)//2
+        delrock = 0
+        minrock = 0
+        for i in rock:
+            t = i+minrock
+            if t < midlen:
+                minrock += i
+                delrock += 1
+            else:
+                minrock = 0
+        if delrock > n:
+            maxlen = midlen - 1
+        else:
+            answer = midlen
+            minlen = midlen + 1
+    return answer
