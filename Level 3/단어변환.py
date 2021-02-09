@@ -17,6 +17,7 @@ def solution(begin, target, words):
 
     li1 = [begin] #총경로
     li2 = [begin]
+
     while True:
 
         for i in dic:
