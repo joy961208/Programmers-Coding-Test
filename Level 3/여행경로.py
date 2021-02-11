@@ -14,7 +14,7 @@ def solution(tickets):
 
     while li1:
         a = li1[-1]
-        
+
         if a in dic :
             li1.append(dic[a].pop())
         else:
