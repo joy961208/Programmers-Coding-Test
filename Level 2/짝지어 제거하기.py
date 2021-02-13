@@ -1,5 +1,6 @@
 def solution(s):
     li = []
+
     for i in s:
         if li == []:
             li.append(i)
