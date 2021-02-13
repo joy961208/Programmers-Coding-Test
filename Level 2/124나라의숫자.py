@@ -1,6 +1,7 @@
 def change2(n):
     a = n
     b = []
+
     while True:
         b.append(a%3)
         a = a//3
