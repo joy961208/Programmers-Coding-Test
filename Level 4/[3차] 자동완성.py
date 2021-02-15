@@ -16,6 +16,7 @@ def solution(words):
     while True:
         c1 = 0
         c2 = 0
+
         for i,j in enumerate(words[a]):
             if i == len(words[a+1]):
                 c1 +=1
