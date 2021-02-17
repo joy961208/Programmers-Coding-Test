@@ -2,6 +2,7 @@ def njinsu(a,n):
     li = []
     if a ==0 or a == 1:
         return [a]
+    
     while a > 0:
         t = a%n
         if t == 10:
