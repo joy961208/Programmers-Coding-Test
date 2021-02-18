@@ -3,6 +3,7 @@ def solution(people, limit):
     people.sort(reverse = 1)
     a = 0
     b = len(people) -1
+
     while True:
         if people[a] + people[b] <= limit:
             a += 1
