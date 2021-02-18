@@ -1,4 +1,5 @@
 import calendar
+
 def solution(a, b):
     answer = ''
     w = ['MON','TUE','WED','THU','FRI','SAT','SUN']
