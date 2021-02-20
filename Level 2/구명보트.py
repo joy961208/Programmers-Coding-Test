@@ -16,4 +16,5 @@ def solution(people, limit):
             break
         elif a>b:
             break
+
     return answer
