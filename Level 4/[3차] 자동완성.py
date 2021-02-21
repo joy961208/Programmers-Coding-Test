@@ -26,6 +26,7 @@ def solution(words):
             else:
                 c1 += 1
                 break
+
         for i,j in enumerate(words[a]):
             if i == len(words[a-1]):
                 c2 +=1
@@ -35,6 +36,7 @@ def solution(words):
             else:
                 c2 += 1
                 break
+
         answer += max(c1,c2)
         a += 1
         if a == len(words) -1:
