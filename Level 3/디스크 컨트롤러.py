@@ -3,6 +3,7 @@ def solution(jobs):
     t = len(jobs)
     a = []
     jobs.sort(reverse = True)
+    
     for i in jobs:
         i.reverse()
         a.append(i)
