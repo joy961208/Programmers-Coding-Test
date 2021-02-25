@@ -13,6 +13,7 @@ def change2(n):
 def solution(n):
     answer = ''
     b = change2(n)
+
     while 0 in b:
         print(b)
         index0 = b.index(0)
@@ -24,7 +25,8 @@ def solution(n):
             b[index0 -1] = 2
         else:
             b[index0 -1] -= 1
-        print(b)
+
+
     for i in b:
         answer += str(i)
     return answer

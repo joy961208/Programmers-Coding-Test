@@ -5,6 +5,7 @@ def solution(distance, rocks, n):
     rocks.append(distance)
     rocks.sort()
     r = [rocks[0]]
+
     for i,j in enumerate(rocks[1:]):
         r.append(j - rocks[i])
 

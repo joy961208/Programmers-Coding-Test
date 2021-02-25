@@ -8,6 +8,7 @@ def solution(s):
             li.pop()
         else:
             li.append(i)
+
     if li == []:
         return 1
     else:
