@@ -7,6 +7,7 @@ def solution(jobs):
     for i in jobs:
         i.reverse()
         a.append(i)
+        
     jobs = a
     answer = jobs[-1][1]
     ans = 0 #대기시간 + 실행시간계산
