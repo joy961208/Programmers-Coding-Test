@@ -1,6 +1,7 @@
 def solution(triangle):
     answer = 0
     li = triangle[0]
+
     for i,j in enumerate(triangle[1:]):
         sub_li = []
         for k,v in enumerate(j):
@@ -12,4 +13,5 @@ def solution(triangle):
                 sub_num = max(li[k],li[k-1]) + v
             sub_li.append(sub_num)
         li = sub_li
+
     return max(li)
