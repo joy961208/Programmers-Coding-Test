@@ -1,6 +1,7 @@
 def solution(N, stages):
     answer = []
     a = len(stages)
+
     for i in range(1,N+1):
         if a == 0:
             answer.append([0,i])
