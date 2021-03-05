@@ -4,6 +4,7 @@ def solution(n, words):
     t = 0
     words_li.append(words.pop())
     le = len(words)
+
     for i in range(le):
         a = words.pop()
         if words_li[-1][-1] != a[0]:
