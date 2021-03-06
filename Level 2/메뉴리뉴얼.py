@@ -2,8 +2,10 @@ from itertools import combinations
 
 def solution(orders, course):
     answer = []
+
     for j,i in enumerate(orders):
         orders[j] = sorted(list(i))
+
     for i in course:
         a = []
         for j in orders:
