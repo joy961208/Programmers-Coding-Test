@@ -8,6 +8,7 @@ def solution(orders, course):
 
     for i in course:
         a = []
+
         for j in orders:
             if len(j) >= i:
                 a.extend(list(combinations(list(j),i)))
