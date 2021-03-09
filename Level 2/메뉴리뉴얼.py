@@ -18,7 +18,7 @@ def solution(orders, course):
         if len(b) != 0 and b.count(b[0]) >= 2:
             answer.append("".join(b[0]))
             c=0
-            
+
             while True:
                 if c != len(b) - 1 and a.count(b[c]) == a.count(b[c+1]):
                     answer.append("".join(b[c+1]))

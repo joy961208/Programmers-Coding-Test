@@ -40,3 +40,4 @@ def solution(dartResult):
         li[0] = li[0]//2
 
     return sum(li)
+
