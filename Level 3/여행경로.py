@@ -1,5 +1,4 @@
 def solution(tickets):
-    answer = []
     dic = {}
 
     for i in tickets:
