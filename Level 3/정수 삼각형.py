@@ -4,6 +4,7 @@ def solution(triangle):
 
     for i,j in enumerate(triangle[1:]):
         sub_li = []
+
         for k,v in enumerate(j):
             if k == 0:
                 sub_num = li[0] + v
