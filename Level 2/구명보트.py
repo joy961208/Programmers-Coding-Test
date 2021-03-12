@@ -11,6 +11,7 @@ def solution(people, limit):
         else:
             a+=1
         answer += 1
+
         if a == b:
             answer += 1
             break
