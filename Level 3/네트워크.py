@@ -6,6 +6,7 @@ def dfs(graph, start_node):
 
     while stack:
         node = stack.pop()
+
         if node not in visit:
             visit.append(node)
             stack.extend(graph[node])
