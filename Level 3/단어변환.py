@@ -1,6 +1,7 @@
 def solution(begin, target, words):
     answer = 0
     words.append(begin)
+
     if target not in words:
         return 0
     dic = {}
