@@ -1,6 +1,7 @@
 def solution(progresses, speeds):
     answer = []
     a = progresses
+
     while True:
         if len(a) == 0:
             break
