@@ -17,6 +17,7 @@ def solution(distance, rocks, n):
         midlen = (maxlen+minlen)//2
         delrock = 0
         minrock = 0
+        
         for i in rock:
             t = i+minrock
             if t < midlen:
