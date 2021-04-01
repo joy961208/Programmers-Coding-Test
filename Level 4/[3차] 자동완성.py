@@ -39,6 +39,7 @@ def solution(words):
 
         answer += max(c1,c2)
         a += 1
+        
         if a == len(words) -1:
             for i, j in enumerate(words[a]):
                 if i == len(words[a - 1]):
