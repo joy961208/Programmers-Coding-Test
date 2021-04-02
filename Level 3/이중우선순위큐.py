@@ -1,5 +1,6 @@
 def solution(operations):
     answer = []
+    
     for i in operations:
         if "I" in i:
             a = list(i.split(" "))
