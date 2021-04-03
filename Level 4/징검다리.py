@@ -26,6 +26,7 @@ def solution(distance, rocks, n):
                 delrock += 1
             else:
                 minrock = 0
+
         if delrock > n:
             maxlen = midlen - 1
         else:
