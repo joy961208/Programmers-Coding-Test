@@ -18,6 +18,7 @@ def njinsu(a,n):
             t = "E"
         elif t == 15:
             t = "F"
+            
         li.append(t)
         a = a//n
     li.reverse()
