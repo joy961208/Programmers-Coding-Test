@@ -6,6 +6,7 @@ def solution(n, times):
     while maxtime >= mintime:
         num = 0
         midtime = (mintime + maxtime) // 2
+        
         for i in times:
             num += midtime // i
             if num >= n:
