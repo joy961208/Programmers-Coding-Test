@@ -2,6 +2,7 @@ def solution(tickets):
     dic = {}
 
     for i in tickets:
+        
         if i[0] in dic:
             dic[i[0]].append(i[1])
             dic[i[0]] = sorted(dic[i[0]],reverse=True)
