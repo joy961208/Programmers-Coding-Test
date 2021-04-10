@@ -3,6 +3,7 @@ def solution(N, road, K):
     answer = 0
     dic1 = {}
     dic2 = {}
+    
     for i in range(1,N+1):
         a = {}
         dic2[i] = inf
