@@ -3,6 +3,7 @@ def solution(words):
     words.sort()
 
     for i,j in enumerate(words[0]):
+        
         if i == len(words[1]):
             answer += 1
             break
