@@ -12,6 +12,7 @@ def solution(jobs):
     answer = jobs[-1][1]
     ans = 0 #대기시간 + 실행시간계산
     wait = []
+    
     while jobs:
         if jobs[-1][1] <= answer:
             heapq.heappush(wait, jobs.pop())
