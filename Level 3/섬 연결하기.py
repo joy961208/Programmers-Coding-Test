@@ -13,8 +13,8 @@ def solution(n, costs):
     answer = 0
     gp = [i for i in range(n)]
     costs.sort(key = lambda x : x[2])
-
     for i in costs:
+
         if find(i[0], gp) != find(i[1], gp):
             gp = union(i[0],i[1],gp)
             answer += i[2]
