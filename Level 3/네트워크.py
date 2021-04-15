@@ -1,22 +1,21 @@
 def dfs(graph, start_node):
+    
     visit = list()
     stack = list()
-
     stack.append(start_node)
 
     while stack:
         node = stack.pop()
-
         if node not in visit:
             visit.append(node)
             stack.extend(graph[node])
-
     return visit
 
 def solution(n, computers):
     answer = 0
     num = [i+1 for i in range(n)]
     li = {}
+    
     for i,j in enumerate(computers):
         sub_li = []
         for v,t in enumerate(j):
