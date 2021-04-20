@@ -5,6 +5,7 @@ def solution(begin, target, words):
     if target not in words:
         return 0
     dic = {}
+    
     for i in words:
         sub_li = []
         for j in words:
