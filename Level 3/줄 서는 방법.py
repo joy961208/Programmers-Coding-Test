@@ -14,6 +14,7 @@ def solution(n, k):
                 answer.append(numlist[i-1])
                 numlist.pop(i-1)
                 break
+                
             elif k == z*i:
                 answer.append(numlist[i - 1])
                 numlist.pop(i - 1)
