@@ -11,6 +11,7 @@ def solution(n, times):
             num += midtime // i
             if num >= n:
                 break
+                
         if num >= n:
             maxtime = midtime - 1
             answer = midtime
