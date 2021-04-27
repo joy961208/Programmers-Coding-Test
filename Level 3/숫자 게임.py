@@ -13,4 +13,5 @@ def solution(A, B):
             B.pop()
         if i == len(A) or B == []:
             break
+            
     return len(answer)
