@@ -22,6 +22,7 @@ def solution(n, computers):
             if t == 1:
                 sub_li.append(v+1)
         li[i+1] = sub_li
+        
     a = []
     for i in li:
         if i not in a:
