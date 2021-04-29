@@ -11,7 +11,6 @@ def prime(a):
 
 def solution(begin, end):
     answer = []
-
     for i in range(begin,end+1):
         if i == 1:
             answer.append(0)
