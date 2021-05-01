@@ -9,6 +9,7 @@ def solution(A, B):
             answer.append(B[-1])
             B.pop()
             i += 1
+            
         else:
             B.pop()
         if i == len(A) or B == []:
