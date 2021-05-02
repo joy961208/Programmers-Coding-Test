@@ -20,7 +20,6 @@ def solution(distance, rocks, n):
         
         for i in rock:
             t = i+minrock
-  
             if t < midlen:
                 minrock += i
                 delrock += 1
