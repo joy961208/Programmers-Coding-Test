@@ -10,4 +10,5 @@ def solution(n):
         c = a + b
         a = b
         b = c
+        
     return c%1234567
