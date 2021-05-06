@@ -6,7 +6,6 @@ def solution(money):
     dp2[0] = 0
 
     for i in range(2, len(money)):
-
         if i != len(money) - 1:
             dp1[i] = max(dp1[i - 1], dp1[i] + dp1[i - 2])
         dp2[i] = max(dp2[i - 1], dp2[i] + dp2[i - 2])
