@@ -8,7 +8,6 @@ def solution(distance, rocks, n):
 
     for i,j in enumerate(rocks[1:]):
         r.append(j - rocks[i])
-
     maxlen = distance
     minlen = 1
 
