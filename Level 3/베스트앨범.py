@@ -11,6 +11,7 @@ def solution(genres, plays): # 각각의 장르에대한 고유번호와 점수�
     b = list(a.values())
     b.sort()
     b.reverse()
+    
     for i in b:
         t = i[1:]
         t.sort()
