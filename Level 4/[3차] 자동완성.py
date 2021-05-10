@@ -12,7 +12,6 @@ def solution(words):
         else:
             answer += 1
             break
-
     a = 1
     while True:
         c1 = 0
