@@ -5,6 +5,7 @@ def solution(n, works):
     if sum(works) <= n:
         return 0
     heap = []
+    
     for i in works:
         heapq.heappush(heap,(-i,i))
     for i in range(n):
