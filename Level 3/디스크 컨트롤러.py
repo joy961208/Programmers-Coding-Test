@@ -17,7 +17,6 @@ def solution(jobs):
         if jobs[-1][1] <= answer:
             heapq.heappush(wait, jobs.pop())
             continue
-            
         elif wait == []:
             answer = jobs[-1][1]
         else :
