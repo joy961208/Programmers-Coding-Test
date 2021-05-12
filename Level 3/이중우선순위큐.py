@@ -9,6 +9,7 @@ def solution(operations):
             answer.remove(max(answer))
         elif answer != [] and "D -1" in i:
             answer.remove(min(answer))
+            
     if answer == []:
         return [0,0]
     else:
