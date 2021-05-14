@@ -6,7 +6,6 @@ def solution(n, arr1, arr2):
         bb = ""
         a1 = arr1[i]
         a2 = arr2[i]
-
         for j in range(n):
             if a1%2 == 1 or a2%2 == 1:
                 bb = "#" + bb
