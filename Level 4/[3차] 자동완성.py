@@ -35,7 +35,6 @@ def solution(words):
             else:
                 c2 += 1
                 break
-
         answer += max(c1,c2)
         a += 1
         
