@@ -15,6 +15,7 @@ def ss(a):
     for i in li:
         dic[i] = li.count(i)
     return dic
+
 def solution(arr):
     answer = 1
     dic ={}
