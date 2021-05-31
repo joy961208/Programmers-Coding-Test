@@ -15,7 +15,6 @@ def solution(n, computers):
     answer = 0
     num = [i+1 for i in range(n)]
     li = {}
-    
     for i,j in enumerate(computers):
         sub_li = []
         for v,t in enumerate(j):
