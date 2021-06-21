@@ -21,7 +21,6 @@ def solution(begin, target, words):
     li2 = [begin]
 
     while True:
-
         for i in dic:
             if i in li1:
                 li2.extend(dic[i])
