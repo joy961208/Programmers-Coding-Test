@@ -30,5 +30,4 @@ def solution(begin, target, words):
         if target in li1:
             break
 
-
     return answer
