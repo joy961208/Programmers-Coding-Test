@@ -12,7 +12,6 @@ def solution(str1, str2):
     for i,j in enumerate(str2[:-1]):
         if j in s and str2[i+1] in s:
             s2.append(j+str2[i + 1])
-            
     b = 0
     a = 0
     s = set()
