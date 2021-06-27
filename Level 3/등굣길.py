@@ -2,7 +2,6 @@ def solution(m, n, puddles):
     answer = 0
     dic = {}
     a = 1
-
     for i in range(n):
         for j in range(m):
             if [j + 1, i + 1] not in puddles:
