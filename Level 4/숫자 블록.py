@@ -9,6 +9,7 @@ def prime(a):
                 return a//i
     return 1
 
+
 def solution(begin, end):
     answer = []
     
