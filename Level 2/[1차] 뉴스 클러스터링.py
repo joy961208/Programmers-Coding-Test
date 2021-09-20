@@ -4,6 +4,7 @@ def solution(str1, str2):
     str2 = str2.lower()
     s1 = []
     s2 = []
+
     for i,j in enumerate(str1[:-1]):
         if j in s and str1[i+1] in s:
             s1.append(j+str1[i + 1])

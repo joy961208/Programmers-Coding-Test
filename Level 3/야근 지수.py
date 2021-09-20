@@ -1,9 +1,11 @@
 import heapq
 def solution(n, works):
     answer = 0
+    
     if sum(works) <= n:
         return 0
     heap = []
+    
     for i in works:
         heapq.heappush(heap,(-i,i))
     for i in range(n):

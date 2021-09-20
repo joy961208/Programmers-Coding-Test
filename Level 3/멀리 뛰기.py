@@ -1,6 +1,7 @@
 def solution(n):
     a = 1
     b = 2
+    
     if n == 1:
         return 1
     elif n == 2:
@@ -9,4 +10,5 @@ def solution(n):
         c = a + b
         a = b
         b = c
+        
     return c%1234567

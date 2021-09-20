@@ -2,6 +2,7 @@
 def solution(stones, k):
     m = max(stones)
     n = 1
+    
     while m-n > 1:
         c = 0
         a = 0

@@ -2,6 +2,7 @@ def clock(time1,time2):
     time1 = list(time1.split(":"))
     time2 = list(time2.split(":"))
     a  = 0
+
     if int(time1[0]) < int(time2[0]):
         a = int(time2[0]) - int(time1[0])
     t1 = int(time1[1])

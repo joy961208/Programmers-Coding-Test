@@ -25,6 +25,7 @@ def solution(orders, course):
                     c += 1
                 else:
                     break
+                    
     answer = list(set(answer))
     answer.sort()
     return answer

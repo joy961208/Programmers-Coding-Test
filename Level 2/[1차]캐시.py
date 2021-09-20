@@ -4,6 +4,7 @@ def solution(cacheSize, cities):
         return len(cities) * 5
     cities = [i.lower() for i in cities]
     cache = []
+    
     for i in cities:
         if i in cache:
             answer += 1

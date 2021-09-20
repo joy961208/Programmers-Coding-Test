@@ -4,6 +4,7 @@ def solution(n, k):
     f = math.factorial(n)
     numlist = [i for i in range(1,n+1)]
     c = n
+    
     while True:
         z = f/n
         for i in range(1,n+1):
@@ -13,6 +14,7 @@ def solution(n, k):
                 answer.append(numlist[i-1])
                 numlist.pop(i-1)
                 break
+                
             elif k == z*i:
                 answer.append(numlist[i - 1])
                 numlist.pop(i - 1)

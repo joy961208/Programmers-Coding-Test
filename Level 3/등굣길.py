@@ -15,6 +15,7 @@ def solution(m, n, puddles):
                     dic[i] = 1
                 elif i-1 in dic:
                     dic[i] = dic[i-1]
+                    
             elif i%m == 1:
                 if i == m+1:
                     dic[i] = 1

@@ -1,6 +1,7 @@
 def solution(genres, plays): # 각각의 장르에대한 고유번호와 점수를 사전을 통해 분류하여 계산
     answer = []
     a = {}
+    
     for i in range(len(plays)):
         if genres[i] in a:
             a[genres[i]].append([plays[i], i])
@@ -10,6 +11,7 @@ def solution(genres, plays): # 각각의 장르에대한 고유번호와 점수�
     b = list(a.values())
     b.sort()
     b.reverse()
+    
     for i in b:
         t = i[1:]
         t.sort()

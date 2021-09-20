@@ -1,5 +1,6 @@
 def solution(operations):
     answer = []
+    
     for i in operations:
         if "I" in i:
             a = list(i.split(" "))
@@ -8,6 +9,7 @@ def solution(operations):
             answer.remove(max(answer))
         elif answer != [] and "D -1" in i:
             answer.remove(min(answer))
+            
     if answer == []:
         return [0,0]
     else:

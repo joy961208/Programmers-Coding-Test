@@ -7,6 +7,7 @@ def solution(a):
     ind0 = 0
     num1 = a[-1]
     ind1 = len(a) -1
+    
     for i in range(c-2):
         if num0 <num1:
             if a[ind1 - 1] < num1:

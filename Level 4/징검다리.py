@@ -8,7 +8,6 @@ def solution(distance, rocks, n):
 
     for i,j in enumerate(rocks[1:]):
         r.append(j - rocks[i])
-
     maxlen = distance
     minlen = 1
 
@@ -17,6 +16,7 @@ def solution(distance, rocks, n):
         midlen = (maxlen+minlen)//2
         delrock = 0
         minrock = 0
+        
         for i in rock:
             t = i+minrock
             if t < midlen:
@@ -24,6 +24,7 @@ def solution(distance, rocks, n):
                 delrock += 1
             else:
                 minrock = 0
+
         if delrock > n:
             maxlen = midlen - 1
         else:

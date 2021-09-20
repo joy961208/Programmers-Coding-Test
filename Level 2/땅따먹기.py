@@ -11,5 +11,6 @@ def solution(land):
             else:
                 li2[j] += max(max(li[j + 1:4]), max(li[0:j]))
         li = li2
+        
     answer = max(li)
     return answer

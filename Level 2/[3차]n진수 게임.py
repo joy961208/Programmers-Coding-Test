@@ -5,6 +5,7 @@ def njinsu(a,n):
 
     while a > 0:
         t = a%n
+
         if t == 10:
             t = "A"
         elif t == 11:
@@ -17,6 +18,7 @@ def njinsu(a,n):
             t = "E"
         elif t == 15:
             t = "F"
+            
         li.append(t)
         a = a//n
     li.reverse()

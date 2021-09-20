@@ -1,4 +1,5 @@
 def solution(sticker):
+    
     if len(sticker) <=3:
         return max(sticker)
     dp1 = sticker.copy()

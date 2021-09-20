@@ -11,7 +11,6 @@ def solution(words):
         else:
             answer += 1
             break
-
     a = 1
     while True:
         c1 = 0
@@ -36,9 +35,9 @@ def solution(words):
             else:
                 c2 += 1
                 break
-
         answer += max(c1,c2)
         a += 1
+        
         if a == len(words) -1:
             for i, j in enumerate(words[a]):
                 if i == len(words[a - 1]):

@@ -8,6 +8,7 @@ def solution(n, stations, w):
         a = i+w
     if a != n:
         b.append(n-a)
+        
     print(b)
     for i in b:
         answer += int(i/(w*2 + 1) )

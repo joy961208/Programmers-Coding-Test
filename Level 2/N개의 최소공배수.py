@@ -4,6 +4,7 @@ def ss(a):
     b = a
     c = 2
     dic = {}
+    
     for i in range(int(math.sqrt(b))+1):
         if a%c == 0:
             a = a//c
@@ -14,6 +15,7 @@ def ss(a):
     for i in li:
         dic[i] = li.count(i)
     return dic
+
 def solution(arr):
     answer = 1
     dic ={}

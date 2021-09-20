@@ -12,6 +12,7 @@ def solution(triangle):
                 sub_num = li[-1] + v
             else:
                 sub_num = max(li[k],li[k-1]) + v
+                
             sub_li.append(sub_num)
         li = sub_li
 

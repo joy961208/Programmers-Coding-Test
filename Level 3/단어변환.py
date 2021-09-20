@@ -1,9 +1,11 @@
 def solution(begin, target, words):
     answer = 0
     words.append(begin)
+
     if target not in words:
         return 0
     dic = {}
+    
     for i in words:
         sub_li = []
         for j in words:
@@ -19,7 +21,6 @@ def solution(begin, target, words):
     li2 = [begin]
 
     while True:
-
         for i in dic:
             if i in li1:
                 li2.extend(dic[i])
@@ -28,6 +29,5 @@ def solution(begin, target, words):
         li1 = li2.copy()
         if target in li1:
             break
-
 
     return answer
